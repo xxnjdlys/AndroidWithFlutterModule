@@ -5,7 +5,4 @@ evaluate(new File(
   'flutter_module/.android/include_flutter.groovy'
 ))
 rootProject.name = "AndroidWithFlutter"
-
-include ':flutter_module'
-
 include ':flutter_module'
