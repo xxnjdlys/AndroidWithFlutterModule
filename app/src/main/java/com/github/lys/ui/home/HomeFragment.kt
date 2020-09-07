@@ -8,6 +8,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.github.lys.R
+import io.flutter.embedding.android.FlutterActivity
 import kotlinx.android.synthetic.main.fragment_home.view.*
 
 class HomeFragment : Fragment() {
@@ -28,7 +29,11 @@ class HomeFragment : Fragment() {
         })
 
         root.text_home.setOnClickListener {
-            //TODO go flutter page
+            startActivity(
+                activity?.let { act ->
+                    FlutterActivity.createDefaultIntent(act)
+                }
+            )
         }
         return root
     }
