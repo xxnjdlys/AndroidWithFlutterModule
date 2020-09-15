@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Android Project With Flutter Module
 
 ### env
